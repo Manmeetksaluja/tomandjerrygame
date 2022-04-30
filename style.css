@@ -1,0 +1,79 @@
+*{
+    margin: 0 ;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.gamecontainer{
+    background-image: url(https://www.tomandjerrychaseasia.com/m/zt/20200522142810/img/maps/house2_aa204ad.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 250%;
+    height: 100vh;
+}
+.jerry{
+    background-image: url(https://purepng.com/public/uploads/large/purepng.com-jerry-tom-and-jerrytom-and-jerrytomjerryanimated-seriesin-1940characters-17015286595464y8nc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 191px;
+    height: 190px;
+    position: absolute;
+    bottom: 5px;
+    left: 21px;
+}
+.tom{
+    width:250px;
+    height:250px;
+    background-image: url(https://static.wikia.nocookie.net/tomandjerry/images/1/14/Tom_Cat_2.png/revision/latest?cb=20200412163656);
+    background-size: cover ;
+    position:absolute;
+    bottom: 5px;
+    left: 44vw;
+}
+.gameover{
+    position: absolute;
+    left:10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: snow;
+}
+#scorecontainer{
+    position: absolute;
+    left:1300px;
+    font-size: 30px;
+    top:10px;
+    font-family: sans-serif;
+    color: seashell;
+
+
+
+    
+
+}
+.animatejerry{
+    animation: jerry 0.6s linear;
+}
+@keyframes jerry{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 450px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+.animatetom{
+        animation: tom 5s linear infinite;
+    }
+@keyframes tom{
+        0%{
+            left:100vw;
+        }
+        100%{
+            left:-10vw;
+        }
+        
+    }
